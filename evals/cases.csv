@@ -1,0 +1,21 @@
+id,message,expected_category,kind,notes
+01,"Fui cobrado duas vezes na mesma fatura deste mês, o valor de R$ 89,90 apareceu duplicado no meu cartão.",cobranca,clear,
+02,"Minha assinatura renovou por um valor diferente do que está anunciado no site, quero entender o motivo.",cobranca,clear,
+03,"Fiz a compra em outubro e não recebi a nota fiscal por e-mail, podem verificar?",cobranca,clear,
+04,O aplicativo fecha sozinho sempre que tento exportar um relatório em PDF.,bug_tecnico,clear,
+05,"A página de login fica branca depois que clico em entrar, e não aparece nenhuma mensagem de erro.",bug_tecnico,clear,
+06,"Os gráficos do painel não carregam desde ontem, fica travado na mensagem de carregando.",bug_tecnico,clear,
+07,Como faço para convidar outros membros da minha equipe para acessar o mesmo plano?,duvida_uso,clear,
+08,Existe alguma forma de programar o envio automático de relatórios por e-mail no sistema?,duvida_uso,clear,
+09,"Não encontrei onde troco a senha da minha conta, podem me indicar o caminho no menu?",duvida_uso,clear,
+10,Seria muito útil ter integração com o Google Calendar para sincronizar meus agendamentos.,solicitacao_recurso,clear,
+11,Vocês pretendem aumentar o limite de tamanho para importação de arquivos CSV?,solicitacao_recurso,clear,
+12,"Sugiro um modo escuro para o painel administrativo, uso o sistema à noite e cansa a vista.",solicitacao_recurso,clear,
+13,Perdi o acesso ao e-mail cadastrado e não consigo recuperar minha conta pelo fluxo normal.,conta_acesso,clear,
+14,Um funcionário foi desligado da empresa e preciso remover o acesso dele à plataforma.,conta_acesso,clear,
+15,Quero transferir a administração da conta para o e-mail de outro colega do time.,conta_acesso,clear,
+16,"Meu cartão foi recusado e agora o sistema bloqueou meu login, isso é problema de pagamento ou da minha conta?",conta_acesso,ambiguous,"Plausíveis: cobranca (causa) e conta_acesso (sintomo). Gabarito: conta_acesso, porque o pedido imediato do usuário é recuperar o acesso."
+17,"Depois da última atualização o botão de exportar desapareceu, e preciso enviar o relatório ao meu gestor ainda hoje.",bug_tecnico,ambiguous,"Plausíveis: bug_tecnico (função existente sumiu) e duvida_uso (não sabe onde está). Gabarito: bug_tecnico, por ser regressão após atualização; a urgência não muda a categoria."
+18,"Comprei o plano anual, mas os recursos premium não liberaram na minha conta e também não recebi a nota fiscal.",cobranca,ambiguous,"Plausíveis: cobranca, conta_acesso e bug_tecnico. Gabarito: cobranca, porque tudo desdobra da confirmação da compra; liberação e nota fiscal são consequências."
+19,"Não sei se estou criando a automação do jeito certo, e quando tento salvar aparece um erro.",duvida_uso,ambiguous,"Plausíveis: duvida_uso e bug_tecnico. Gabarito: duvida_uso, porque a dúvida vem primeiro e o erro pode ser consequência do fluxo incorreto; se o erro persistir no fluxo correto, seria bug."
+20,Quero cancelar minha assinatura e apagar todos os meus dados do sistema.,conta_acesso,ambiguous,"Plausíveis: cobranca (cancelamento) e conta_acesso (gestão da conta). Gabarito: conta_acesso, porque o pedido central é sobre a conta e seus dados, não sobre valores."
