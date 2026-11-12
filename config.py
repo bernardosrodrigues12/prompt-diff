@@ -1,6 +1,6 @@
 from pathlib import Path
 
-MODEL = "gemini-3.6-flash"
+MODEL = "gemini-3.5-flash-lite"
 
 TEMPERATURE = 0
 
