@@ -63,7 +63,7 @@ funcionalidade venceu a âncora da palavra "login", que nem o few-shot venceu).
 - Custo: entrada mediana 496 tokens —> mais barata que a v2 (procedimento custa menos que bloco de exemplos).
 - Latência mediana 6.663 ms (a menor, mas a margem de ~4% sobre a v1 está dentro do ruído de rodada única).
 
-Decisão: **v3** é a ***vencedora***. Será usada de base para a v4, somando com exemplos da v2
+**Melhor Resultado Observado**: v3. Será usada de base para a v4, somando com exemplos da v2
 
 ## Infraestrutura: Mudanças que afetaram o experimento
 
