@@ -1,0 +1,31 @@
+id,message,expected_category,kind,notes
+V01,"Fui cobrado duas vezes no cartão neste mês pelo mesmo plano.",cobranca,clear
+V02,"Preciso da nota fiscal do pagamento de outubro para a contabilidade.",cobranca,clear
+V03,"Cancelei a assinatura ontem e ainda apareceu cobrança hoje.",cobranca,clear
+V04,"O sistema fecha sozinho toda vez que eu abro o relatório de vendas.",bug_tecnico,clear
+V05,"Os anexos enviados pelo chat não carregam e aparece erro 500.",bug_tecnico,clear
+V06,"Ao salvar um cliente novo, a tela mostra erro e os dados somem.",bug_tecnico,clear
+V07,"Como eu exporto minha lista de contatos para planilha?",duvida_uso,clear
+V08,"Onde fica a opção de criar um modelo de proposta?",duvida_uso,clear
+V09,"Como agendo um lembrete para um cliente específico?",duvida_uso,clear
+V10,"Gostaria que o sistema tivesse integração com o Google Agenda.",solicitacao_recurso,clear
+V11,"Seria ótimo ter modo escuro no aplicativo.",solicitacao_recurso,clear
+V12,"Podem incluir a opção de importar dados via CSV?",solicitacao_recurso,clear
+V13,"Preciso alterar o e-mail cadastrado na minha conta.",conta_acesso,clear
+V14,"Quero remover o acesso do meu ex-colaborador ao painel.",conta_acesso,clear
+V15,"Esqueci minha senha e o link de recuperação não chega no e-mail.",conta_acesso,clear
+V16,"A tela de login aparece em branco desde ontem e não consigo entrar.",bug_tecnico,ambiguous
+V17,"Depois que mudaram a tela de entrada, não consigo acessar minha conta.",bug_tecnico,ambiguous
+V18,"Não consigo entrar na conta. Vocês podem resetar meu acesso?",conta_acesso,ambiguous
+V19,"Sei que a senha pode ser trocada, mas onde fica essa opção no menu de configurações?",duvida_uso,ambiguous
+V20,"Procurei a exportação em todos os menus e não achei. Antes ela ficava na tela inicial.",bug_tecnico,ambiguous
+V21,"O relatório mostra totais diferentes do que eu esperava. Estou somando errado ou é erro do sistema?",duvida_uso,ambiguous
+V22,"A busca por cliente não encontra o nome completo, só o primeiro nome. Funciona assim mesmo?",duvida_uso,ambiguous
+V23,"Quero que o sistema bloqueie o acesso após três tentativas erradas de senha.",solicitacao_recurso,ambiguous
+V24,"Quero ver o histórico de acessos de quem entrou na minha conta. Como faço isso?",conta_acesso,ambiguous
+V25,"Fui cobrado por um recurso que nunca usei, e agora a conta está bloqueada.",cobranca,ambiguous
+V26,"Depois do pagamento, o plano continua aparecendo como gratuito. Preciso que isso seja atualizado.",cobranca,ambiguous
+V27,"O sistema demora mais de um minuto para salvar. Seria bom ter um indicador de progresso.",solicitacao_recurso,ambiguous
+V28,"Ontem sumiu o botão de enviar WhatsApp que existia no cadastro do cliente.",bug_tecnico,ambiguous
+V29,"Quero adicionar mais um usuário, mas o botão de convite está cinza.",conta_acesso,ambiguous
+V30,"Como faço para reativar minha conta? Ela ficou desativada depois de uma cobrança recusada.",conta_acesso,ambiguous

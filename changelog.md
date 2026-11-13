@@ -65,6 +65,26 @@ funcionalidade venceu a âncora da palavra "login", que nem o few-shot venceu).
 
 **Melhor Resultado Observado**: v3. Será usada de base para a v4, somando com exemplos da v2
 
+## 2026-11-13 - Critério de Avaliação da v4 (antes da rodada)
+Versão alvo: 
+- v4 (base da v3 + exemplos da v2 + definições de duvida_uso e conta_acesso corrigidas + desempate ajustado para o caso de dúvida × bug).
+- Comparada contra: v3 (melhor resultado observado).
+- Conjunto: evals/validation_cases.csv — 30 casos novos (15 claros, 15 ambíguos).
+- Limitação: o conjunto não é cego. Os casos foram escritos após observação dos erros 05, 09, 16 e 19 do conjunto de desenvolvimento, sem reler essas mensagens.
+
+- Repetições: 5 execuções por caso, por versão (150 chamadas por versão).
+- Métrica por caso: caso conta como acerto se ≥ 3 das 5 execuções estiverem corretas.
+- Métrica geral: acertos nas 150 execuções, com a proporção por caso reportada junto.
+
+- Critérios de melhora (todos precisam valer):
+   1. A v4 tem mais casos com acerto por maioria que a v3, com McNemar exato pareado (bilateral) p < 0,05. Isso exige pelo menos 6 casos favoráveis à v4 e nenhum contrário, ou combinação equivalente.
+   2. Nenhuma regressão nos casos claros: acertos da v4 ≥ acertos da v3 nos 15 casos claros.
+   3. Zero falhas de formato nas 150 execuções da v4.
+
+   Se algum critério falhar, a v3 permanece como referência e a conclusão registrada será: **"não há evidência de melhora da v4 sobre a v3 neste conjunto"**.
+
+- Regra: estes critérios não são alterados depois da rodada. Se for necessário mudá-los, isso vira uma entrada nova, com a justificativa explícita.
+
 ## Infraestrutura: Mudanças que afetaram o experimento
 
 - System Instruction: Os primeiros runs enviaram prompt e mensagem colados num único texto, e o modelo respondeu À META ao invés de classificar.
