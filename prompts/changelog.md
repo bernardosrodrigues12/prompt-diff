@@ -114,6 +114,34 @@ Observações:
 Conclusão: pendente. Os critérios comparam a v4 com a v3 no mesmo conjunto. A
 avaliação só será registrada depois da rodada de validação da v3.
 
+
+  ## 2026-11-13 — Conclusão da comparação v4 × v3 no conjunto de validação
+
+- Rodada da v3 de validação: 30 casos × 5 repetições (150 execuções). 
+   Duas tentativas interrompidas por travamento de rede antes da rodada válida, ambas descartadas com --force antes de qualquer avaliação.
+
+- Resultados:
+   - v3: 25/30 casos aprovados, 124/150 execuções corretas, claros 15/15, ambíguos 10/15.
+   - v4: 26/30 casos aprovados, 132/150 execuções corretas, claros 15/15, ambíguos 11/15.
+
+- Comparação pareada por caso (McNemar exato, bilateral):
+   - Favoráveis à v4: 1 (V20). Contrários: 0. p = 1,0.
+
+Critérios declarados antes da rodada:
+   1. McNemar p < 0,05 com mais favoráveis que contrários: FALHOU.
+   2. Nenhuma regressão nos casos claros: OK (15/15 em ambas).
+   3. Zero falhas de formato: OK (0 em ambas).
+
+**Conclusão**: não há evidência de melhora da v4 sobre a v3 neste conjunto. A única diferença foi o caso V20. Os casos V17, V21, V24 e V29 continuam reprovados nas duas versões, o que indica que a redação das fronteiras bug × conta_acesso e dúvida × conta_acesso não foi resolvida pela v4.
+
+- Limitações: o conjunto não é cego (os casos foram escritos após observar os erros
+05, 09, 16 e 19). 
+   O único caso discordante torna o teste sem poder estatístico. A v4 não foi alterada após a rodada. Nenhum gabarito foi alterado.
+
+Resultado registrado como está. Qualquer nova versão exige novo conjunto e novo critério
+declarado antes da rodada.
+
+
 ## Infraestrutura: Mudanças que afetaram o experimento
 
 - System Instruction: Os primeiros runs enviaram prompt e mensagem colados num único texto, e o modelo respondeu À META ao invés de classificar.
